@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="450.0" style="-fx-background-color: #778899;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxtest.HelloController">
+   <children>
+      <Button fx:id="SortBut" layoutX="310.0" layoutY="148.0" mnemonicParsing="false" onAction="#OnButtonSortClick" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #32cd32 green;" text="Sort" textAlignment="CENTER" textFill="#3f3f3f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="33.0" layoutY="97.0" prefHeight="26.0" prefWidth="143.0" text="First Array" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Arr1TF" layoutX="33.0" layoutY="123.0" prefHeight="25.0" prefWidth="212.0" />
+      <Label layoutX="33.0" layoutY="163.0" prefHeight="26.0" prefWidth="158.0" text="Second Array" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Arr2TF" layoutX="33.0" layoutY="190.0" prefHeight="25.0" prefWidth="212.0" />
+      <Label layoutX="39.0" layoutY="26.0" prefHeight="26.0" prefWidth="223.0" text="Insert number of elements" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NumTF" layoutX="278.0" layoutY="26.0" prefHeight="25.0" prefWidth="64.0" />
+      <AnchorPane layoutX="4.0" layoutY="275.0" prefHeight="180.0" prefWidth="442.0" style="-fx-background-color: #769890;">
+         <children>
+            <Label alignment="CENTER" layoutX="142.0" layoutY="14.0" prefHeight="26.0" prefWidth="158.0" text="Result" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ResTF" layoutX="20.0" layoutY="58.0" prefHeight="25.0" prefWidth="212.0" />
+            <Label fx:id="TimeL" layoutX="247.0" layoutY="58.0" prefHeight="26.0" prefWidth="183.0" text="Time: ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="ClearBut" layoutX="176.0" layoutY="112.0" mnemonicParsing="false" onAction="#OnButtonClearClick" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #32cda6;" text="Clear" textAlignment="CENTER" textFill="#3f3f3f">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="EnterNumBut" layoutX="347.0" layoutY="25.0" mnemonicParsing="false" onAction="#OnButtonEnterClick" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #32cda6;" text="Generate" textAlignment="CENTER" textFill="#3f3f3f">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
